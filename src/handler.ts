@@ -12,7 +12,6 @@ export interface AppGraphQLContext {
 const resolvers: Resolvers = {
   Query: {
     game: (root, args, context) => {
-      console.log('here: ', root, args, context);
       return {
         id: '123ID'
       };
