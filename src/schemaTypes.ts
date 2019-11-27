@@ -18,19 +18,19 @@ export type Scalars = {
 
 export type Game = {
    __typename?: 'Game',
-  id?: Maybe<Scalars['ID']>,
-  name?: Maybe<Scalars['String']>,
-  covers?: Maybe<GameImage>,
+  id: Scalars['ID'],
+  name: Scalars['String'],
+  covers: GameImage,
 };
 
 export type GameImage = {
    __typename?: 'GameImage',
-  cover?: Maybe<Scalars['String']>,
-  logo?: Maybe<Scalars['String']>,
+  cover: Scalars['String'],
+  logo: Scalars['String'],
   thumb?: Maybe<Scalars['String']>,
-  screenshotMed?: Maybe<Scalars['String']>,
-  screenshotBig?: Maybe<Scalars['String']>,
-  screenshotHuge?: Maybe<Scalars['String']>,
+  screenshotMed: Scalars['String'],
+  screenshotBig: Scalars['String'],
+  screenshotHuge: Scalars['String'],
   res720?: Maybe<Scalars['String']>,
   res1080?: Maybe<Scalars['String']>,
 };
@@ -140,18 +140,18 @@ export type QueryResolvers<ContextType = any, ParentType extends ResolversParent
 }>;
 
 export type GameResolvers<ContextType = any, ParentType extends ResolversParentTypes['Game'] = ResolversParentTypes['Game']> = ResolversObject<{
-  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>,
-  name?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
-  covers?: Resolver<Maybe<ResolversTypes['GameImage']>, ParentType, ContextType>,
+  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>,
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>,
+  covers?: Resolver<ResolversTypes['GameImage'], ParentType, ContextType>,
 }>;
 
 export type GameImageResolvers<ContextType = any, ParentType extends ResolversParentTypes['GameImage'] = ResolversParentTypes['GameImage']> = ResolversObject<{
-  cover?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
-  logo?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
+  cover?: Resolver<ResolversTypes['String'], ParentType, ContextType>,
+  logo?: Resolver<ResolversTypes['String'], ParentType, ContextType>,
   thumb?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
-  screenshotMed?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
-  screenshotBig?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
-  screenshotHuge?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
+  screenshotMed?: Resolver<ResolversTypes['String'], ParentType, ContextType>,
+  screenshotBig?: Resolver<ResolversTypes['String'], ParentType, ContextType>,
+  screenshotHuge?: Resolver<ResolversTypes['String'], ParentType, ContextType>,
   res720?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
   res1080?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>,
 }>;

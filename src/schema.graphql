@@ -3,18 +3,18 @@ extend type Query {
 }
 
 type Game {
-  id: ID
-  name: String
-  covers: GameImage
+  id: ID!
+  name: String!
+  covers: GameImage!
 }
 
 type GameImage {
-  cover: String
-  logo: String
+  cover: String!
+  logo: String!
   thumb: String
-  screenshotMed: String
-  screenshotBig: String
-  screenshotHuge: String
+  screenshotMed: String!
+  screenshotBig: String!
+  screenshotHuge: String!
   res720: String
   res1080: String
 }

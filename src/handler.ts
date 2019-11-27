@@ -13,7 +13,15 @@ const resolvers: Resolvers = {
   Query: {
     game: (root, args, context) => {
       return {
-        id: '123ID'
+        id: '123ID',
+        name: 'Apex Legends',
+        covers: {
+          cover: 'url',
+          screenshotMed: 'url',
+          screenshotBig: 'url',
+          screenshotHuge: 'url',
+          logo: 'url'
+        }
       };
     }
   }
